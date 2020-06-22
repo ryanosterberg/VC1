@@ -13,9 +13,9 @@ namespace CTWMasterClass_WebAppActivities.Controllers
             return View(viewName: "Index", model: 0);
         }
         [HttpPost]
-        public ActionResult SaySquare(int inputNumber)
+        public ActionResult SaySquare(double inputNumber)
         {
-            return View(viewName: "Index", model: (inputNumber * inputNumber));
+            return View(viewName: "Index", model: (inputNumber * inputNumber * inputNumber));
         }
 
     }
