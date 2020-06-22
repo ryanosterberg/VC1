@@ -243,6 +243,7 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\StringActivityRebecca\Index.cshtml" />
     <Content Include="Views\SquareANumberRebecca\Index.cshtml" />
+    <Content Include="Views\SquareANumberRebecca\Index2.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
