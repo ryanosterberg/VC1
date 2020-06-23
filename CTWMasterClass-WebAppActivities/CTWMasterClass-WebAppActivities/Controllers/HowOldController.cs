@@ -15,8 +15,12 @@ namespace CTWMasterClass_WebAppActivities.Controllers
         [HttpPost]
         public ActionResult HowOld(DateTime birthday)
         {
-            
-            return View(viewName: "Index", model: diff);
+            int yearNow = DateTime.Now.Year;
+            int yearThen = birthday.Year;
+            int age = yearNow - yearThen;
+            if (birthday.AddYears(age)> DateTime.Now)
+                age--;
+            return View(viewName: "Index", model: age);
         }
     }
 }
